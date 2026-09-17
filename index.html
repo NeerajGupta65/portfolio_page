@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neeraj Kumar Gupta | AI & Machine Learning Engineer</title>
+  <meta name="description" content="Portfolio of Neeraj Kumar Gupta - AI & Machine Learning Engineer specializing in GenAI/RAG, Computer Vision, and BI Analytics. CS undergraduate at MIT Bengaluru." />
+  <meta name="keywords" content="Neeraj Kumar Gupta, AI Engineer, Machine Learning, GenAI, RAG, LangChain, FAISS, Power BI, Python, MIT Bengaluru" />
+  <meta name="author" content="Neeraj Kumar Gupta" />
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Neeraj Kumar Gupta | AI & Machine Learning Engineer" />
+  <meta property="og:description" content="Building GenAI/RAG systems, full-stack ML applications, and BI-driven analytics with Python, SQL, and Power BI." />
+  <meta property="og:url" content="https://neerajgupta65.github.io/" />
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css?v=2.1" />
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-code">&lt;</span><span class="brand-name">NKG</span><span class="brand-code">/&gt;</span>
+        <span class="brand-badge">AI / ML</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#playground" class="nav-link">Live Playground</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme" title="Toggle Light/Dark Theme">
+          <i data-lucide="sun" class="sun-icon"></i>
+          <i data-lucide="moon" class="moon-icon"></i>
+        </button>
+        <a href="#contact" class="btn btn-sm btn-primary">Hire Me</a>
+        <button class="mobile-toggle icon-btn" id="mobile-toggle" aria-label="Open mobile menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            <span>Available for AI & Data Engineering Roles • MIT Bengaluru</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Neeraj Kumar Gupta</span>
+          </h1>
+          
+          <h2 class="hero-subtitle">
+            <span>AI & Machine Learning Engineer</span>
+            <span class="subtitle-bullet">•</span>
+            <span>GenAI / RAG</span>
+            <span class="subtitle-bullet">•</span>
+            <span>BI Analytics</span>
+          </h2>
+
+          <p class="hero-description">
+            Computer Science undergraduate at <strong>MIT Bengaluru (AI Specialization, 2027)</strong>. 
+            I architect high-performance <strong>GenAI/RAG pipelines</strong>, full-stack <strong>machine learning applications</strong>, 
+            and <strong>BI-driven analytics</strong> with an uncompromising focus on data integrity, reproducibility, and rigorous evaluation.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <i data-lucide="layers"></i> View Projects
+            </a>
+            <a href="#playground" class="btn btn-secondary">
+              <i data-lucide="play-circle"></i> Try Interactive Demos
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i data-lucide="send"></i> Let's Connect
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/NeerajGupta65" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+              <i data-lucide="github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://linkedin.com/in/neerajkumargupta" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+              <i data-lucide="linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="mailto:neerajsg.gupta@gmail.com" class="social-link" title="Email">
+              <i data-lucide="mail"></i>
+              <span>neerajsg.gupta@gmail.com</span>
+            </a>
+            <a href="tel:+919739150158" class="social-link" title="Phone">
+              <i data-lucide="phone"></i>
+              <span>+91 9739150158</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="terminal-title">neeraj@mit-bengaluru:~/ai-core</span>
+              <span class="terminal-tag">Python 3.13</span>
+            </div>
+            <div class="terminal-body">
+              <p class="term-line"><span class="term-prompt">$</span> cat profile.py</p>
+              <pre class="term-code"><code><span class="cm"># Engineer Profile</span>
+engineer = {
+    <span class="str">"name"</span>: <span class="val">"Neeraj Kumar Gupta"</span>,
+    <span class="str">"degree"</span>: <span class="val">"B.Tech CSE (AI Spec) @ MIT Bengaluru"</span>,
+    <span class="str">"interests"</span>: [<span class="val">"GenAI/RAG"</span>, <span class="val">"Computer Vision"</span>, <span class="val">"Full-Stack ML"</span>, <span class="val">"Power BI"</span>],
+    <span class="str">"philosophy"</span>: <span class="val">"Data Integrity, Reproducibility & Analytical Rigor"</span>,
+    <span class="str">"key_metric"</span>: <span class="val">"87% Soft-Voting Ensemble | 71% Minority Recall"</span>,
+    <span class="str">"status"</span>: <span class="val">"Ready to Build & Deploy"</span>
+}</code></pre>
+              <p class="term-line"><span class="term-prompt">$</span> python run_evaluations.py --production</p>
+              <p class="term-output success"><i data-lucide="check-circle" class="sm-icon"></i> [FAISS Index] Vector store built with 0.04s latency</p>
+              <p class="term-output success"><i data-lucide="check-circle" class="sm-icon"></i> [Soft-Voting Ensemble] AUC-ROC: 0.84 | Precision: 72%</p>
+              <p class="term-output info"><i data-lucide="shield-check" class="sm-icon"></i> [Biometric Pipeline] Facial + Voice verification synced</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Bar -->
+      <div class="container">
+        <div class="metrics-bar">
+          <div class="metric-item">
+            <div class="metric-number" data-target="87">0</div>
+            <div class="metric-suffix">%</div>
+            <div class="metric-label">Ensemble Test Accuracy</div>
+            <div class="metric-sub">Soft-voting classifier on HR Attrition</div>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <div class="metric-number" data-target="71">0</div>
+            <div class="metric-suffix">%</div>
+            <div class="metric-label">Minority Recall via SMOTE</div>
+            <div class="metric-sub">Boosted from 38% baseline</div>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <div class="metric-number" data-target="1470">0</div>
+            <div class="metric-suffix">+</div>
+            <div class="metric-label">Employee Records Scored</div>
+            <div class="metric-sub">3-tier attrition risk engine</div>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <div class="metric-number" data-target="100">0</div>
+            <div class="metric-suffix">%</div>
+            <div class="metric-label">Cited Source Attribution</div>
+            <div class="metric-sub">Zero-hallucination RAG workflow</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Executive Summary</span>
+          <h2 class="section-title">Engineering Reliable AI & Data Intelligence</h2>
+          <p class="section-subtitle">Bridging the gap between raw datasets, robust mathematical models, and human-centric dashboards.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass-card">
+            <div class="about-icon-wrapper">
+              <i data-lucide="brain-circuit"></i>
+            </div>
+            <h3>GenAI & RAG Architecture</h3>
+            <p>
+              Designing semantic search pipelines with LangChain, FAISS, and OpenAI APIs. 
+              Implementing recursive document chunking and source-link citation graphs that guarantee grounded responses and eliminate hallucination.
+            </p>
+            <ul class="about-bullets">
+              <li><i data-lucide="check"></i> Low-latency FAISS vector index search</li>
+              <li><i data-lucide="check"></i> Automated equity & financial news synthesis</li>
+              <li><i data-lucide="check"></i> Dynamic URL web scraper & ingestion engine</li>
+            </ul>
+          </div>
+
+          <div class="about-card glass-card">
+            <div class="about-icon-wrapper">
+              <i data-lucide="fingerprint"></i>
+            </div>
+            <h3>Computer Vision & Audio AI</h3>
+            <p>
+              Developing robust multi-modal authentication and intelligent computer vision pipelines. Combining deep facial embeddings with voice biometrics for tamper-proof verification.
+            </p>
+            <ul class="about-bullets">
+              <li><i data-lucide="check"></i> Dual biometrics (dlib + Resemblyzer + librosa)</li>
+              <li><i data-lucide="check"></i> Full-stack architecture with Supabase & bcrypt</li>
+              <li><i data-lucide="check"></i> Dynamic QR-code session join workflows</li>
+            </ul>
+          </div>
+
+          <div class="about-card glass-card">
+            <div class="about-icon-wrapper">
+              <i data-lucide="bar-chart-3"></i>
+            </div>
+            <h3>Predictive ML & BI Analytics</h3>
+            <p>
+              Transforming imbalanced tabular data into actionable enterprise intelligence. Developing supervised ensembles with SMOTE and delivering 5-page interactive Power BI dashboards.
+            </p>
+            <ul class="about-bullets">
+              <li><i data-lucide="check"></i> 4-model ensemble (XGBoost, RF, LR, DT)</li>
+              <li><i data-lucide="check"></i> 3-tier risk-scoring engine (threshold=0.35)</li>
+              <li><i data-lucide="check"></i> 12+ DAX KPI cards and drill-through analysis</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Career Focus Callout -->
+        <div class="callout-card glass-card">
+          <div class="callout-content">
+            <div class="callout-badge"><i data-lucide="compass"></i> Vision & Target Mission</div>
+            <h3>Drawn to high-stakes data integrity, AI governance, and analytical rigor</h3>
+            <p>
+              Inspired by organizations like <em>Thomson Reuters</em> where delivering trusted, verifiable information is paramount. 
+              I bring an engineering mindset focused on data cleanliness, algorithmic transparency, reproducible workflows, and measurable impact.
+            </p>
+          </div>
+          <div class="callout-actions">
+            <a href="mailto:neerajsg.gupta@gmail.com" class="btn btn-primary">
+              <i data-lucide="mail"></i> Discuss Opportunities
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i data-lucide="send"></i> Get in Touch
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Tech Stack & Tools</span>
+          <h2 class="section-title">Technical Expertise</h2>
+          <p class="section-subtitle">Categorized breakdown of frameworks, models, databases, and programming languages in my workflow.</p>
+        </div>
+
+        <!-- Skills Filter Tabs -->
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="all">All Skills</button>
+          <button class="filter-btn" data-filter="genai">GenAI & NLP</button>
+          <button class="filter-btn" data-filter="ml">Machine Learning</button>
+          <button class="filter-btn" data-filter="cv">Vision & Audio</button>
+          <button class="filter-btn" data-filter="languages">Languages</button>
+          <button class="filter-btn" data-filter="frameworks">Frameworks</button>
+          <button class="filter-btn" data-filter="data">Databases & BI</button>
+        </div>
+
+        <div class="skills-grid" id="skills-container">
+          <!-- GenAI & NLP -->
+          <div class="skill-pill" data-category="genai">
+            <span class="skill-dot genai"></span>
+            <span class="skill-name">LangChain</span>
+            <span class="skill-level">RAG Orchestration</span>
+          </div>
+          <div class="skill-pill" data-category="genai">
+            <span class="skill-dot genai"></span>
+            <span class="skill-name">RAG (Retrieval-Augmented Gen)</span>
+            <span class="skill-level">Architecture</span>
+          </div>
+          <div class="skill-pill" data-category="genai">
+            <span class="skill-dot genai"></span>
+            <span class="skill-name">FAISS</span>
+            <span class="skill-level">Vector Indexing</span>
+          </div>
+          <div class="skill-pill" data-category="genai">
+            <span class="skill-dot genai"></span>
+            <span class="skill-name">OpenAI API</span>
+            <span class="skill-level">Embeddings & LLMs</span>
+          </div>
+          <div class="skill-pill" data-category="genai">
+            <span class="skill-dot genai"></span>
+            <span class="skill-name">Vector Embeddings</span>
+            <span class="skill-level">Semantic Search</span>
+          </div>
+          <div class="skill-pill" data-category="genai">
+            <span class="skill-dot genai"></span>
+            <span class="skill-name">NLTK & NLP</span>
+            <span class="skill-level">Text Processing</span>
+          </div>
+
+          <!-- Machine Learning -->
+          <div class="skill-pill" data-category="ml">
+            <span class="skill-dot ml"></span>
+            <span class="skill-name">XGBoost</span>
+            <span class="skill-level">Gradient Boosting</span>
+          </div>
+          <div class="skill-pill" data-category="ml">
+            <span class="skill-dot ml"></span>
+            <span class="skill-name">SMOTE</span>
+            <span class="skill-level">Oversampling Imbalance</span>
+          </div>
+          <div class="skill-pill" data-category="ml">
+            <span class="skill-dot ml"></span>
+            <span class="skill-name">Scikit-learn</span>
+            <span class="skill-level">Pipelines & Modeling</span>
+          </div>
+          <div class="skill-pill" data-category="ml">
+            <span class="skill-dot ml"></span>
+            <span class="skill-name">Soft-Voting Ensembles</span>
+            <span class="skill-level">Model Stacking</span>
+          </div>
+          <div class="skill-pill" data-category="ml">
+            <span class="skill-dot ml"></span>
+            <span class="skill-name">Random Forest & Trees</span>
+            <span class="skill-level">Supervised Learning</span>
+          </div>
+          <div class="skill-pill" data-category="ml">
+            <span class="skill-dot ml"></span>
+            <span class="skill-name">GridSearchCV</span>
+            <span class="skill-level">Hyperparameter Tuning</span>
+          </div>
+
+          <!-- Computer Vision & Audio -->
+          <div class="skill-pill" data-category="cv">
+            <span class="skill-dot cv"></span>
+            <span class="skill-name">dlib</span>
+            <span class="skill-level">Facial Landmark Detection</span>
+          </div>
+          <div class="skill-pill" data-category="cv">
+            <span class="skill-dot cv"></span>
+            <span class="skill-name">face_recognition</span>
+            <span class="skill-level">Biometric Encoding</span>
+          </div>
+          <div class="skill-pill" data-category="cv">
+            <span class="skill-dot cv"></span>
+            <span class="skill-name">Resemblyzer</span>
+            <span class="skill-level">Voice Verification</span>
+          </div>
+          <div class="skill-pill" data-category="cv">
+            <span class="skill-dot cv"></span>
+            <span class="skill-name">librosa</span>
+            <span class="skill-level">Audio Processing</span>
+          </div>
+
+          <!-- Languages -->
+          <div class="skill-pill" data-category="languages">
+            <span class="skill-dot lang"></span>
+            <span class="skill-name">Python</span>
+            <span class="skill-level">Core Engineering</span>
+          </div>
+          <div class="skill-pill" data-category="languages">
+            <span class="skill-dot lang"></span>
+            <span class="skill-name">SQL</span>
+            <span class="skill-level">Complex Queries & Joins</span>
+          </div>
+          <div class="skill-pill" data-category="languages">
+            <span class="skill-dot lang"></span>
+            <span class="skill-name">JavaScript (ES6+)</span>
+            <span class="skill-level">Full-Stack Web</span>
+          </div>
+          <div class="skill-pill" data-category="languages">
+            <span class="skill-dot lang"></span>
+            <span class="skill-name">Java</span>
+            <span class="skill-level">OOP Foundations</span>
+          </div>
+          <div class="skill-pill" data-category="languages">
+            <span class="skill-dot lang"></span>
+            <span class="skill-name">HTML5 & CSS3</span>
+            <span class="skill-level">Responsive Design</span>
+          </div>
+
+          <!-- Frameworks & Tools -->
+          <div class="skill-pill" data-category="frameworks">
+            <span class="skill-dot fw"></span>
+            <span class="skill-name">React</span>
+            <span class="skill-level">Frontend UI</span>
+          </div>
+          <div class="skill-pill" data-category="frameworks">
+            <span class="skill-dot fw"></span>
+            <span class="skill-name">Node.js & Express.js</span>
+            <span class="skill-level">Backend Services</span>
+          </div>
+          <div class="skill-pill" data-category="frameworks">
+            <span class="skill-dot fw"></span>
+            <span class="skill-name">FastAPI & Flask</span>
+            <span class="skill-level">RESTful ML APIs</span>
+          </div>
+          <div class="skill-pill" data-category="frameworks">
+            <span class="skill-dot fw"></span>
+            <span class="skill-name">Streamlit</span>
+            <span class="skill-level">Rapid ML Dashboards</span>
+          </div>
+
+          <!-- Databases & BI -->
+          <div class="skill-pill" data-category="data">
+            <span class="skill-dot db"></span>
+            <span class="skill-name">Power BI</span>
+            <span class="skill-level">DAX & Drill-Through</span>
+          </div>
+          <div class="skill-pill" data-category="data">
+            <span class="skill-dot db"></span>
+            <span class="skill-name">Supabase</span>
+            <span class="skill-level">PostgreSQL Cloud</span>
+          </div>
+          <div class="skill-pill" data-category="data">
+            <span class="skill-dot db"></span>
+            <span class="skill-name">MySQL & PostgreSQL</span>
+            <span class="skill-level">Relational Storage</span>
+          </div>
+          <div class="skill-pill" data-category="data">
+            <span class="skill-dot db"></span>
+            <span class="skill-name">MongoDB</span>
+            <span class="skill-level">NoSQL Document Store</span>
+          </div>
+          <div class="skill-pill" data-category="data">
+            <span class="skill-dot db"></span>
+            <span class="skill-name">Pandas & NumPy</span>
+            <span class="skill-level">Data Wrangling</span>
+          </div>
+          <div class="skill-pill" data-category="data">
+            <span class="skill-dot db"></span>
+            <span class="skill-name">Matplotlib & Seaborn</span>
+            <span class="skill-level">EDA Visualization</span>
+          </div>
+          <div class="skill-pill" data-category="data">
+            <span class="skill-dot db"></span>
+            <span class="skill-name">A/B Testing</span>
+            <span class="skill-level">Statistical Inference</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Production AI & Analytics Systems</h2>
+          <p class="section-subtitle">Real-world systems engineered with rigorous quantitative validation and clean software architecture.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: News Research & Equity Analysis AI Tool -->
+          <article class="project-card glass-card">
+            <div class="project-header">
+              <div class="project-category">
+                <i data-lucide="sparkles"></i> GenAI & Equity Research
+              </div>
+              <span class="project-date">Aug 2026 – Sep 2026</span>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">News Research & Equity Analysis AI Tool</h3>
+              <p class="project-desc">
+                An interactive Retrieval-Augmented Generation (RAG) financial intelligence platform. 
+                Synthesizes live market news, ingests dynamic financial articles, and generates high-fidelity equity summaries with exact source citations to eliminate hallucinations.
+              </p>
+
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <i data-lucide="check-circle-2"></i>
+                  <span><strong>Recursive Document Chunking:</strong> Preserves semantic context across financial balance sheets and quarterly filings.</span>
+                </div>
+                <div class="highlight-item">
+                  <i data-lucide="check-circle-2"></i>
+                  <span><strong>Optimized FAISS Indexing:</strong> Low-latency vector similarity retrieval over dense OpenAI embeddings.</span>
+                </div>
+                <div class="highlight-item">
+                  <i data-lucide="check-circle-2"></i>
+                  <span><strong>Strict Source Attribution:</strong> Every synthesized statement contains verifiable URL citations for equity analysts.</span>
+                </div>
+              </div>
+
+              <div class="tech-tags">
+                <span class="tag">Python</span>
+                <span class="tag">LangChain</span>
+                <span class="tag">FAISS</span>
+                <span class="tag">OpenAI API</span>
+                <span class="tag">Streamlit</span>
+                <span class="tag">RAG</span>
+              </div>
+            </div>
+
+            <div class="project-footer" style="display: flex; flex-direction: column; gap: 0.65rem; width: 100%; margin-top: auto;">
+              <button type="button" class="btn btn-primary btn-block modal-trigger" data-project="rag-equity" style="width: 100%; display: flex; justify-content: center;">
+                <span>Architecture Deep Dive</span>
+                <span class="btn-arrow">&rarr;</span>
+              </button>
+              <a href="https://github.com/NeerajGupta65" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline btn-block" style="width: 100%; display: flex; justify-content: center;">
+                <i data-lucide="github"></i> View on GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: SnapClass – AI-Powered Attendance System -->
+          <article class="project-card glass-card">
+            <div class="project-header">
+              <div class="project-category">
+                <i data-lucide="scan-face"></i> Computer Vision & Multi-Modal Biometrics
+              </div>
+              <span class="project-date">Jan 2026 – Mar 2026</span>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">SnapClass – AI-Powered Attendance System</h3>
+              <p class="project-desc">
+                Full-stack automated attendance platform featuring role-based portals and dual-biometric verification. 
+                Combines 68-point facial landmark recognition with deep voiceprint verification to guarantee tamper-proof attendance logging.
+              </p>
+
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <i data-lucide="check-circle-2"></i>
+                  <span><strong>Dual-Biometric Verification:</strong> Fuses facial recognition (`dlib`, `face_recognition`) with acoustic voice verification (`Resemblyzer`, `librosa`).</span>
+                </div>
+                <div class="highlight-item">
+                  <i data-lucide="check-circle-2"></i>
+                  <span><strong>Dynamic QR Join Flow:</strong> Generates time-sensitive QR join codes for instant classroom enrollment.</span>
+                </div>
+                <div class="highlight-item">
+                  <i data-lucide="check-circle-2"></i>
+                  <span><strong>Role-Based Cloud Portals:</strong> Dedicated Admin, Faculty, and Student portals backed by Supabase and bcrypt encryption.</span>
+                </div>
+              </div>
+
+              <div class="tech-tags">
+                <span class="tag">Python</span>
+                <span class="tag">dlib</span>
+                <span class="tag">face_recognition</span>
+                <span class="tag">Resemblyzer</span>
+                <span class="tag">librosa</span>
+                <span class="tag">Supabase</span>
+                <span class="tag">bcrypt</span>
+              </div>
+            </div>
+
+            <div class="project-footer" style="display: flex; flex-direction: column; gap: 0.65rem; width: 100%; margin-top: auto;">
+              <button type="button" class="btn btn-primary btn-block modal-trigger" data-project="snapclass" style="width: 100%; display: flex; justify-content: center;">
+                <span>Architecture Deep Dive</span>
+                <span class="btn-arrow">&rarr;</span>
+              </button>
+              <a href="https://github.com/NeerajGupta65" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline btn-block" style="width: 100%; display: flex; justify-content: center;">
+                <i data-lucide="github"></i> View on GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: HR Attrition Prediction & BI Dashboard -->
+          <article class="project-card glass-card">
+            <div class="project-header">
+              <div class="project-category">
+                <i data-lucide="pie-chart"></i> Machine Learning & BI Analytics
+              </div>
+              <span class="project-date">Sep 2025 – Nov 2025</span>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">HR Attrition Prediction & BI Dashboard</h3>
+              <p class="project-desc">
+                End-to-end predictive pipeline and executive intelligence dashboard built on IBM HR Analytics (1,470 records, 35 features). 
+                Solved minority-class imbalance using SMOTE and developed a soft-voting ensemble paired with a 5-page Power BI dashboard.
+              </p>
+
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <i data-lucide="check-circle-2"></i>
+                  <span><strong>SMOTE Imbalance Correction:</strong> Boosted minority recall from 38% to 71% by establishing a balanced 50/50 training distribution.</span>
+                </div>
+                <div class="highlight-item">
+                  <i data-lucide="check-circle-2"></i>
+                  <span><strong>87% Ensemble Accuracy & 0.84 AUC-ROC:</strong> Soft-voting stack of Logistic Regression, Decision Tree, Tuned Random Forest, and XGBoost.</span>
+                </div>
+                <div class="highlight-item">
+                  <i data-lucide="check-circle-2"></i>
+                  <span><strong>3-Tier Risk Engine & Power BI:</strong> Ranked employees (Low/Medium/High at threshold 0.35) with 12+ DAX KPI cards and drill-through drivers.</span>
+                </div>
+              </div>
+
+              <div class="tech-tags">
+                <span class="tag">Python</span>
+                <span class="tag">XGBoost</span>
+                <span class="tag">SMOTE</span>
+                <span class="tag">Scikit-learn</span>
+                <span class="tag">Power BI</span>
+                <span class="tag">DAX</span>
+              </div>
+            </div>
+
+            <div class="project-footer" style="display: flex; flex-direction: column; gap: 0.65rem; width: 100%; margin-top: auto;">
+              <button type="button" class="btn btn-primary btn-block modal-trigger" data-project="hr-attrition" style="width: 100%; display: flex; justify-content: center;">
+                <span>Architecture Deep Dive</span>
+                <span class="btn-arrow">&rarr;</span>
+              </button>
+              <a href="https://github.com/NeerajGupta65" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline btn-block" style="width: 100%; display: flex; justify-content: center;">
+                <i data-lucide="github"></i> View on GitHub
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Additional Projects Subsection -->
+        <div class="additional-projects-header">
+          <h3 class="subsection-title">Additional Projects</h3>
+          <p class="section-subtitle">Deep learning architectures, machine learning experiments, and full-stack applications from my GitHub.</p>
+        </div>
+
+        <div class="additional-projects-grid">
+          <!-- Project 1: Neural Style Transfer -->
+          <article class="project-card glass-card">
+            <div class="project-header">
+              <div class="project-badge-group">
+                <span class="badge badge-additional">Additional Project</span>
+                <span class="badge badge-working"><span class="pulse-dot-sm"></span> Currently Working</span>
+              </div>
+              <span class="project-date">Computer Vision & AI</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Neural Style Transfer (AdaIN)</h3>
+              <p class="project-desc">
+                Flask deep learning application that applies arbitrary artistic styles to uploaded photographs in real-time using Adaptive Instance Normalization (AdaIN) with PyTorch.
+              </p>
+              <div class="tech-tags">
+                <span class="tag">Python</span>
+                <span class="tag">PyTorch</span>
+                <span class="tag">AdaIN</span>
+                <span class="tag">Flask</span>
+                <span class="tag">Computer Vision</span>
+              </div>
+            </div>
+            <div class="project-footer" style="display: flex; flex-direction: column; gap: 0.65rem; width: 100%; margin-top: auto;">
+              <button type="button" class="btn btn-primary btn-block modal-trigger" data-project="neural-style" style="width: 100%; display: flex; justify-content: center;">
+                <span>Architecture Deep Dive</span>
+                <span class="btn-arrow">&rarr;</span>
+              </button>
+              <a href="https://github.com/NeerajGupta65/Neural_Style_Transfer" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline btn-block" style="width: 100%; display: flex; justify-content: center;">
+                <i data-lucide="github"></i> View on GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Student Score Analysis -->
+          <article class="project-card glass-card">
+            <div class="project-header">
+              <span class="badge badge-additional">Additional Project</span>
+              <span class="project-date">Machine Learning</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Student Performance & Score Predictor</h3>
+              <p class="project-desc">
+                Applied machine learning pipeline on educational data to uncover performance drivers, perform exploratory statistical data analysis, and accurately predict student examination outcomes.
+              </p>
+              <div class="tech-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Scikit-learn</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">EDA</span>
+                <span class="tag">Regression</span>
+              </div>
+            </div>
+            <div class="project-footer" style="display: flex; flex-direction: column; gap: 0.65rem; width: 100%; margin-top: auto;">
+              <button type="button" class="btn btn-primary btn-block modal-trigger" data-project="student-score" style="width: 100%; display: flex; justify-content: center;">
+                <span>Architecture Deep Dive</span>
+                <span class="btn-arrow">&rarr;</span>
+              </button>
+              <a href="https://github.com/NeerajGupta65/Student_score_analysis" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline btn-block" style="width: 100%; display: flex; justify-content: center;">
+                <i data-lucide="github"></i> View on GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: NLP Text Summarizer -->
+          <article class="project-card glass-card">
+            <div class="project-header">
+              <span class="badge badge-additional">Additional Project</span>
+              <span class="project-date">NLP & Transformers</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">NLP Automated Text Summarizer</h3>
+              <p class="project-desc">
+                Natural language processing engine for document distillation. Ingests long-form textual reports and generates concise, coherent summaries without information loss.
+              </p>
+              <div class="tech-tags">
+                <span class="tag">Python</span>
+                <span class="tag">NLP</span>
+                <span class="tag">Transformers</span>
+                <span class="tag">Flask</span>
+                <span class="tag">NLTK</span>
+              </div>
+            </div>
+            <div class="project-footer" style="display: flex; flex-direction: column; gap: 0.65rem; width: 100%; margin-top: auto;">
+              <button type="button" class="btn btn-primary btn-block modal-trigger" data-project="nlp-summarizer" style="width: 100%; display: flex; justify-content: center;">
+                <span>Architecture Deep Dive</span>
+                <span class="btn-arrow">&rarr;</span>
+              </button>
+              <a href="https://github.com/NeerajGupta65/NLP-text-summarizer" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline btn-block" style="width: 100%; display: flex; justify-content: center;">
+                <i data-lucide="github"></i> View on GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 4: Personal Finance Tracker -->
+          <article class="project-card glass-card">
+            <div class="project-header">
+              <span class="badge badge-additional">Additional Project</span>
+              <span class="project-date">Full-Stack Web</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Personal Finance & Budget Tracker</h3>
+              <p class="project-desc">
+                Interactive financial management application featuring automated transaction categorization, monthly cash flow dashboards, and budget goal monitoring.
+              </p>
+              <div class="tech-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Express.js</span>
+                <span class="tag">HTML5/CSS3</span>
+                <span class="tag">FinTech</span>
+              </div>
+            </div>
+            <div class="project-footer" style="display: flex; flex-direction: column; gap: 0.65rem; width: 100%; margin-top: auto;">
+              <button type="button" class="btn btn-primary btn-block modal-trigger" data-project="finance-tracker" style="width: 100%; display: flex; justify-content: center;">
+                <span>Architecture Deep Dive</span>
+                <span class="btn-arrow">&rarr;</span>
+              </button>
+              <a href="https://github.com/NeerajGupta65/Personal-Finance-Tracker" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline btn-block" style="width: 100%; display: flex; justify-content: center;">
+                <i data-lucide="github"></i> View on GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 5: Airbnb Full-Stack Clone -->
+          <article class="project-card glass-card">
+            <div class="project-header">
+              <span class="badge badge-additional">Additional Project</span>
+              <span class="project-date">Full-Stack & Cloud System</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Airbnb Clone – Vacation Rental Platform</h3>
+              <p class="project-desc">
+                Full-stack accommodations booking marketplace inspired by Airbnb, featuring dynamic property listings, Mapbox geocoding & interactive maps, Cloudinary media pipeline, and secure user authentication.
+              </p>
+              <div class="tech-tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">Express</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">Mapbox SDK</span>
+                <span class="tag">Cloudinary</span>
+                <span class="tag">Passport.js</span>
+              </div>
+            </div>
+            <div class="project-footer" style="display: flex; flex-direction: column; gap: 0.65rem; width: 100%; margin-top: auto;">
+              <button type="button" class="btn btn-primary btn-block modal-trigger" data-project="airbnb-clone" style="width: 100%; display: flex; justify-content: center;">
+                <span>Architecture Deep Dive</span>
+                <span class="btn-arrow">&rarr;</span>
+              </button>
+              <a href="https://github.com/NeerajGupta65/AIR-BNB" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline btn-block" style="width: 100%; display: flex; justify-content: center;">
+                <i data-lucide="github"></i> View on GitHub
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Live Playground Section -->
+    <section class="section playground-section" id="playground">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Interactive Demos</span>
+          <h2 class="section-title">Live AI & Analytics Playground</h2>
+          <p class="section-subtitle">Experience my engineering logic live in your browser: test a financial RAG retrieval pipeline or compute attrition risk.</p>
+        </div>
+
+        <div class="playground-wrapper glass-card">
+          <!-- Playground Tabs -->
+          <div class="playground-tabs">
+            <button class="pg-tab active" data-tab="rag-demo">
+              <i data-lucide="search-code"></i> RAG Semantic Search Inspector
+            </button>
+            <button class="pg-tab" data-tab="attrition-demo">
+              <i data-lucide="calculator"></i> HR Attrition Risk Estimator
+            </button>
+          </div>
+
+          <!-- Tab Content 1: RAG Demo -->
+          <div class="pg-content active" id="rag-demo">
+            <div class="pg-grid">
+              <div class="pg-controls">
+                <h4><i data-lucide="terminal"></i> Test Query Ingestion</h4>
+                <p class="text-muted">Select an equity research query or type your own to inspect recursive chunk retrieval & citation synthesis:</p>
+                
+                <div class="sample-queries">
+                  <button class="sample-query-btn" data-query="How will rising AI GPU demand impact gross margins for FY27?">
+                    "AI GPU demand & gross margins"
+                  </button>
+                  <button class="sample-query-btn" data-query="What are the regulatory risks in decentralized banking liquidity?">
+                    "Regulatory risks in liquidity"
+                  </button>
+                  <button class="sample-query-btn" data-query="Summarize semiconductor supply chain bottlenecks and lead times.">
+                    "Semiconductor supply lead times"
+                  </button>
+                </div>
+
+                <div class="input-group">
+                  <input type="text" id="rag-input" placeholder="Type a financial equity research question..." value="How will rising AI GPU demand impact gross margins for FY27?" />
+                  <button id="run-rag-btn" class="btn btn-primary">
+                    <i data-lucide="play"></i> Run RAG Pipeline
+                  </button>
+                </div>
+
+                <div class="rag-params">
+                  <span class="param-badge">Embedding: text-embedding-3-small</span>
+                  <span class="param-badge">Chunk Size: 500 chars (overlap: 50)</span>
+                  <span class="param-badge">Vector Index: FAISS FlatIP</span>
+                </div>
+              </div>
+
+              <div class="pg-output">
+                <h4><i data-lucide="cpu"></i> Pipeline Output & Source Citations</h4>
+                <div id="rag-results" class="rag-results-box">
+                  <div class="rag-status-line">
+                    <span class="status-indicator"></span> Ready. Click "Run RAG Pipeline" to evaluate similarity metrics.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab Content 2: HR Attrition Demo -->
+          <div class="pg-content" id="attrition-demo">
+            <div class="pg-grid">
+              <div class="pg-controls">
+                <h4><i data-lucide="sliders"></i> Employee Feature Inputs</h4>
+                <p class="text-muted">Adjust key features from the IBM HR Analytics dataset to run through the 4-model ensemble risk engine:</p>
+
+                <div class="slider-group">
+                  <label for="feat-overtime">
+                    <span>OverTime Status:</span>
+                    <span id="val-overtime" class="slider-val">Yes</span>
+                  </label>
+                  <select id="feat-overtime" class="styled-select">
+                    <option value="1" selected>Yes (Frequently Working Overtime)</option>
+                    <option value="0">No (Standard Work Hours)</option>
+                  </select>
+                </div>
+
+                <div class="slider-group">
+                  <label for="feat-income">
+                    <span>Monthly Income:</span>
+                    <span id="val-income" class="slider-val">$3,200</span>
+                  </label>
+                  <input type="range" id="feat-income" min="1500" max="20000" step="250" value="3200" />
+                </div>
+
+                <div class="slider-group">
+                  <label for="feat-satisfaction">
+                    <span>Job Satisfaction (1 - 4):</span>
+                    <span id="val-satisfaction" class="slider-val">1 (Low)</span>
+                  </label>
+                  <input type="range" id="feat-satisfaction" min="1" max="4" step="1" value="1" />
+                </div>
+
+                <div class="slider-group">
+                  <label for="feat-years">
+                    <span>Years At Company:</span>
+                    <span id="val-years" class="slider-val">2 Years</span>
+                  </label>
+                  <input type="range" id="feat-years" min="0" max="30" step="1" value="2" />
+                </div>
+
+                <div class="slider-group">
+                  <label for="feat-worklife">
+                    <span>Work-Life Balance (1 - 4):</span>
+                    <span id="val-worklife" class="slider-val">1 (Bad)</span>
+                  </label>
+                  <input type="range" id="feat-worklife" min="1" max="4" step="1" value="1" />
+                </div>
+              </div>
+
+              <div class="pg-output">
+                <h4><i data-lucide="activity"></i> 3-Tier Risk Engine Output</h4>
+                <div class="attrition-card" id="attrition-result-card">
+                  <div class="risk-gauge-container">
+                    <div class="risk-meter-track">
+                      <div class="risk-meter-fill" id="risk-meter-fill" style="width: 78%;"></div>
+                    </div>
+                    <div class="risk-score-display">
+                      <span class="risk-prob-text" id="risk-prob-text">78.4%</span>
+                      <span class="risk-badge high" id="risk-tier-badge">High Risk Cohort</span>
+                    </div>
+                  </div>
+
+                  <div class="ensemble-breakdown">
+                    <h5>Ensemble Model Voting (Threshold = 0.35)</h5>
+                    <div class="model-row">
+                      <span>XGBoost (Classifier):</span>
+                      <strong id="vote-xgb" class="text-danger">0.82 (Flagged)</strong>
+                    </div>
+                    <div class="model-row">
+                      <span>Random Forest (Tuned):</span>
+                      <strong id="vote-rf" class="text-danger">0.76 (Flagged)</strong>
+                    </div>
+                    <div class="model-row">
+                      <span>Logistic Regression:</span>
+                      <strong id="vote-lr" class="text-danger">0.77 (Flagged)</strong>
+                    </div>
+                    <div class="model-row">
+                      <span>Decision Tree:</span>
+                      <strong id="vote-dt" class="text-danger">0.79 (Flagged)</strong>
+                    </div>
+                  </div>
+
+                  <div class="action-alert" id="risk-recommendation">
+                    <i data-lucide="alert-triangle"></i>
+                    <span><strong>HR Intervention Triggered:</strong> Employee falls in the top 15% high-risk cohort. Recommended review: overtime workload & compensation parity.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Certifications Section -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic & Credentials</span>
+          <h2 class="section-title">Education & Certifications</h2>
+          <p class="section-subtitle">Rigorous computer science curriculum, specialized AI coursework, and industry-certified credentials.</p>
+        </div>
+
+        <div class="edu-cert-grid">
+          <!-- Education Column -->
+          <div class="edu-column">
+            <h3 class="column-title"><i data-lucide="graduation-cap"></i> Formal Education</h3>
+            
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                  <div class="timeline-meta">
+                    <span class="badge badge-accent">2023 – Expected July 2027</span>
+                    <span class="timeline-location"><i data-lucide="map-pin"></i> Bengaluru, India</span>
+                  </div>
+                  <h4 class="timeline-institution">Manipal Institute of Technology</h4>
+                  <p class="timeline-degree">B.Tech – Computer Science & Engineering (AI Specialization)</p>
+                  <p class="timeline-details">
+                    Rigorous specialization focusing on GenAI architectures, neural networks, machine learning theory, data structures, algorithm design, operating systems, and advanced database management.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                  <div class="timeline-meta">
+                    <span class="badge">Completed May 2023</span>
+                    <span class="timeline-location"><i data-lucide="map-pin"></i> Lucknow, India</span>
+                  </div>
+                  <h4 class="timeline-institution">Lucknow Public School</h4>
+                  <p class="timeline-degree">High School Diploma</p>
+                  <p class="timeline-details">
+                    Advanced curriculum in Physics, Chemistry, and Mathematics (PCM) with distinguished performance in computer science fundamentals.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certifications Column -->
+          <div class="cert-column">
+            <h3 class="column-title"><i data-lucide="award"></i> Industry Certifications</h3>
+            
+            <div class="cert-list">
+              <div class="cert-card glass-card">
+                <div class="cert-icon-box google">
+                  <i data-lucide="database"></i>
+                </div>
+                <div class="cert-info">
+                  <h4>Foundations: Data, Data, Everywhere</h4>
+                  <div class="cert-issuer">Google</div>
+                  <p>Comprehensive training covering data integrity, analytical thinking, data wrangling pipelines, SQL analysis, and governance standards.</p>
+                </div>
+              </div>
+
+              <div class="cert-card glass-card">
+                <div class="cert-icon-box ibm">
+                  <i data-lucide="cpu"></i>
+                </div>
+                <div class="cert-info">
+                  <h4>Machine Learning for Data Science Projects</h4>
+                  <div class="cert-issuer">IBM SkillBuild</div>
+                  <p>End-to-end applied machine learning, exploratory data analysis, cross-validation methodologies, and predictive modeling using Python & Scikit-learn.</p>
+                </div>
+              </div>
+
+              <div class="cert-card glass-card">
+                <div class="cert-icon-box cisco">
+                  <i data-lucide="network"></i>
+                </div>
+                <div class="cert-info">
+                  <h4>CCL India FY26, CFL Participant</h4>
+                  <div class="cert-issuer">Cisco</div>
+                  <p>Enterprise networking, cybersecurity fundamentals, and collaborative infrastructure development within enterprise cloud environments.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Connect Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">Let's Build Intelligent Systems Together</h2>
+          <p class="section-subtitle">Open to internship opportunities, research collaborations, and full-time discussions starting 2027.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards -->
+          <div class="contact-info">
+            <div class="contact-card glass-card">
+              <div class="contact-icon">
+                <i data-lucide="mail"></i>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Email</span>
+                <a href="mailto:neerajsg.gupta@gmail.com" class="contact-value">neerajsg.gupta@gmail.com</a>
+              </div>
+              <button class="copy-btn icon-btn" data-copy="neerajsg.gupta@gmail.com" title="Copy email">
+                <i data-lucide="copy"></i>
+              </button>
+            </div>
+
+            <div class="contact-card glass-card">
+              <div class="contact-icon">
+                <i data-lucide="phone"></i>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Phone</span>
+                <a href="tel:+919739150158" class="contact-value">+91 9739150158</a>
+              </div>
+              <button class="copy-btn icon-btn" data-copy="+919739150158" title="Copy phone">
+                <i data-lucide="copy"></i>
+              </button>
+            </div>
+
+            <div class="contact-card glass-card">
+              <div class="contact-icon">
+                <i data-lucide="linkedin"></i>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">LinkedIn</span>
+                <a href="https://linkedin.com/in/neerajkumargupta" target="_blank" rel="noopener noreferrer" class="contact-value">linkedin.com/in/neerajkumargupta</a>
+              </div>
+              <a href="https://linkedin.com/in/neerajkumargupta" target="_blank" rel="noopener noreferrer" class="icon-btn" title="Open LinkedIn">
+                <i data-lucide="external-link"></i>
+              </a>
+            </div>
+
+            <div class="contact-card glass-card">
+              <div class="contact-icon">
+                <i data-lucide="github"></i>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">GitHub</span>
+                <a href="https://github.com/NeerajGupta65" target="_blank" rel="noopener noreferrer" class="contact-value">github.com/NeerajGupta65</a>
+              </div>
+              <a href="https://github.com/NeerajGupta65" target="_blank" rel="noopener noreferrer" class="icon-btn" title="Open GitHub">
+                <i data-lucide="external-link"></i>
+              </a>
+            </div>
+
+            <div class="contact-card glass-card">
+              <div class="contact-icon">
+                <i data-lucide="map-pin"></i>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Locations</span>
+                <span class="contact-value">Bengaluru & Lucknow, India</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct Message Form -->
+          <div class="contact-form-container glass-card">
+            <h3>Send a Message</h3>
+            <p class="text-muted">Feel free to reach out directly using this quick message form:</p>
+
+            <form id="contact-form" class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name">Your Name</label>
+                  <input type="text" id="contact-name" placeholder="e.g. John Doe" required />
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Your Email</label>
+                  <input type="email" id="contact-email" placeholder="e.g. john@example.com" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <input type="text" id="contact-subject" placeholder="e.g. AI Engineering Internship / Project Discussion" required />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" rows="5" placeholder="Hi Neeraj, I came across your portfolio and wanted to connect regarding..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <i data-lucide="send"></i> Send Message via Email
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="brand-name">Neeraj Kumar Gupta</span>
+        <p>© 2026. Built with modern web standards, analytical precision, and engineering rigor.</p>
+      </div>
+
+      <div class="footer-center">
+        <a href="#hero">Back to Top <i data-lucide="arrow-up" class="sm-icon"></i></a>
+      </div>
+
+      <div class="footer-right">
+        <a href="https://github.com/NeerajGupta65" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i data-lucide="github"></i></a>
+        <a href="https://linkedin.com/in/neerajkumargupta" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+        <a href="mailto:neerajsg.gupta@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="toast"></div>
+
+  <!-- Project Deep-Dive Modal -->
+  <div id="project-modal" class="modal-backdrop">
+    <div class="modal-dialog glass-card">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-tag" id="modal-tag">Architecture</span>
+          <h3 id="modal-title">Project Title</h3>
+        </div>
+        <button type="button" class="modal-close icon-btn" id="modal-close" aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="modal-body" id="modal-body">
+        <!-- Injected via JavaScript -->
+      </div>
+
+      <div class="modal-footer" id="modal-footer">
+        <a href="#" target="_blank" rel="noopener noreferrer" id="modal-github" class="btn btn-primary">
+          <i data-lucide="github"></i> View Repository on GitHub
+        </a>
+        <button type="button" class="btn btn-secondary modal-close-btn" id="modal-footer-close">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js?v=2.1"></script>
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
