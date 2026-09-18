@@ -600,17 +600,42 @@ function initContactAndClipboard() {
 function initMobileNav() {
   const toggle = document.getElementById('mobile-toggle');
   const menu = document.getElementById('nav-menu');
+  const backdrop = document.getElementById('nav-backdrop');
+
+  function toggleMenu(forceClose = false) {
+    if (!menu) return;
+    const shouldOpen = forceClose ? false : !menu.classList.contains('open');
+    menu.classList.toggle('open', shouldOpen);
+    if (backdrop) backdrop.classList.toggle('open', shouldOpen);
+    if (toggle) {
+      toggle.setAttribute('aria-expanded', shouldOpen ? 'true' : 'false');
+      toggle.innerHTML = shouldOpen ? '<i data-lucide="x"></i>' : '<i data-lucide="menu"></i>';
+      if (window.lucide) lucide.createIcons();
+    }
+    document.body.style.overflow = shouldOpen ? 'hidden' : '';
+  }
 
   if (toggle && menu) {
-    toggle.addEventListener('click', () => {
-      menu.classList.toggle('open');
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleMenu();
     });
+
+    if (backdrop) {
+      backdrop.addEventListener('click', () => toggleMenu(true));
+    }
 
     const links = menu.querySelectorAll('.nav-link');
     links.forEach((link) => {
       link.addEventListener('click', () => {
-        menu.classList.remove('open');
+        toggleMenu(true);
       });
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && menu.classList.contains('open')) {
+        toggleMenu(true);
+      }
     });
   }
 }

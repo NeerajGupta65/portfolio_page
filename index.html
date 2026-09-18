@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="styles.css?v=2.1" />
+  <link rel="stylesheet" href="styles.css?v=2.2" />
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
@@ -41,15 +41,18 @@
         <a href="#playground" class="nav-link">Live Playground</a>
         <a href="#education" class="nav-link">Education</a>
         <a href="#contact" class="nav-link">Contact</a>
+        <a href="#contact" class="nav-link mobile-only-cta btn btn-primary">Hire Me &rarr;</a>
       </nav>
+
+      <div class="nav-backdrop" id="nav-backdrop"></div>
 
       <div class="nav-actions">
         <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme" title="Toggle Light/Dark Theme">
           <i data-lucide="sun" class="sun-icon"></i>
           <i data-lucide="moon" class="moon-icon"></i>
         </button>
-        <a href="#contact" class="btn btn-sm btn-primary">Hire Me</a>
-        <button class="mobile-toggle icon-btn" id="mobile-toggle" aria-label="Open mobile menu">
+        <a href="#contact" class="btn btn-sm btn-primary desktop-hire-btn">Hire Me</a>
+        <button class="mobile-toggle icon-btn" id="mobile-toggle" aria-label="Open mobile menu" aria-expanded="false">
           <i data-lucide="menu"></i>
         </button>
       </div>
@@ -1197,7 +1200,7 @@ engineer = {
     </div>
   </div>
 
-  <script src="script.js?v=2.1"></script>
+  <script src="script.js?v=2.2"></script>
   <script>
     // Initialize Lucide icons
     lucide.createIcons();
