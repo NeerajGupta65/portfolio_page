@@ -1662,8 +1662,8 @@ input[type="range"] {
   left: 0;
   right: 0;
   bottom: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background: rgba(4, 8, 18, 0.88);
   z-index: 99999 !important;
   align-items: center;
@@ -1907,9 +1907,20 @@ input[type="range"] {
     display: inline-flex;
   }
 
+  .desktop-hire-btn {
+    display: none !important;
+  }
+
   /* Hero Section */
   .hero-section {
     padding: 2.25rem 0 1.5rem;
+  }
+
+  .hero-content,
+  .hero-visual {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
   }
 
   .hero-title {
@@ -1940,8 +1951,39 @@ input[type="range"] {
   }
 
   .hero-socials {
-    gap: 0.75rem;
+    display: flex;
     flex-wrap: wrap;
+    gap: 0.65rem 1rem;
+    align-items: center;
+    width: 100%;
+  }
+
+  .social-link {
+    font-size: 0.82rem;
+    word-break: break-word;
+  }
+
+  .terminal-card {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .terminal-body {
+    overflow-x: auto;
+  }
+
+  .term-code {
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  .term-output {
+    flex-wrap: wrap;
+    word-break: break-word;
   }
 
   /* 2x2 Metrics Grid */
@@ -2076,9 +2118,6 @@ input[type="range"] {
   }
 
   /* Timeline & Certifications */
-  .timeline-dot {
-    left: -1.25rem;
-  }
 
   .timeline-content {
     padding: 1.15rem 1rem;
